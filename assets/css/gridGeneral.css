@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .app{    
     display: grid;
