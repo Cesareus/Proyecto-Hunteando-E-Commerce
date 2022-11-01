@@ -3,7 +3,7 @@
     width: 100%;   
     background-color: red;  
 }
-.contenido{
+.main{
     grid-area: contenido;
     width: 100%;
     background-color: green;

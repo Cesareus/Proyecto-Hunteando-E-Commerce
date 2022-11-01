@@ -1,0 +1,24 @@
+.mainDestacados{
+    width: 80%;
+    background-color: blueviolet;
+    margin: 0 auto;
+    height: auto;
+}
+
+.mainDestacados__title{
+    color: var(--color_placeholder);
+    margin: 2%;    
+}
+
+.mainDestacados__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainDestacados__contenedor--card{}
+
+.mainDestacados__contenedor--cardImg{}
+
+.mainDestacados__contenedor--cardDescripcion{}
+
+.mainDestacados__contenedor--cardPrecio{}
