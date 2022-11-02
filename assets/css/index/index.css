@@ -1,8 +1,4 @@
-.encabezado{
-    grid-area: header;
-    width: 100%;   
-    background-color: red;  
-}
+
 .main{
     grid-area: contenido;
     width: 100%;
