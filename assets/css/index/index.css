@@ -1,0 +1,17 @@
+
+.main{
+    grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    max-width: 1880px;
+    width: 100%;    
+    background-color: var(--color_fondo_claro);   
+}
+.rodapie{
+    grid-area: footer;
+    width: 100%; 
+    background-color: #2d2d33;   
+    height:80px ;
+    background-color: blue;   
+}

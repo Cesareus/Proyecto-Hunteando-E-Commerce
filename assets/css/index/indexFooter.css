@@ -1,0 +1,48 @@
+.footer__menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+.footer__info{
+    height: 184px;
+    background-color:#2E367B ;
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer__info-contacto{
+    margin: 0 0 19px 60px;
+    color: #DEDBDB;
+}
+.footer__info-contacto>h5{
+    color: #ff4f11;
+}
+.footer__info-copyright>h5{
+    color: #ff4f11;
+}
+
+.footer__info-suscripcion>h5{
+    color: #ff4f11;
+}
+.footer__info-suscripcion>input{
+    width: 362px;
+    height: 32px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+}
+.footer__info-suscripcion>input:focus{
+    outline-style: none;
+    border: 1px solid #ff4f11;
+}
+.footer__menu>li>a{
+    color:#DEDBDB;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125.5%;
+}
+.footer__menu-container{
+    background-color: #2d2d33;
+    height: 100%;
+}
