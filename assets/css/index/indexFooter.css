@@ -7,7 +7,7 @@
 }
 .footer__info{
     height: 184px;
-    background-color:#2E367B ;
+    background-color:var(--fondo-azul);
     padding-top: 28px;
     display: flex;
     justify-content: space-around;
