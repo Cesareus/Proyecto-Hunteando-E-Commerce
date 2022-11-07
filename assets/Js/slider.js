@@ -1,4 +1,5 @@
-let thumbnails = document.querySelectorAll('.card');
+let thumbnailsarriba = document.querySelectorAll('.mainDestacados__contenedor--card');
+let thumbnailsabajo = document.querySelectorAll('.mainPotenciatp__contenedor--card');
 let slider = document.getElementById('contenedor__productos');
 let slider1 = document.getElementById('contenedor__potencia');
 
@@ -34,23 +35,46 @@ const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
 //alert("Left Scroll:" + slider.scrollLeft);
 
 //AUTO PLAY THE SLIDER 
-function autoPlay() {
+function autoPlayarriba() {
     if (slider.scrollLeft > (maxScrollLeft - 1)) {
         slider.scrollLeft -= maxScrollLeft;
     } else {
         slider.scrollLeft += 1;
     }
 }
-let play = setInterval(autoPlay, 50);
+
+function autoPlayabajo(){
+    if (slider1.scrollLeft > (maxScrollLeft - 1)) {
+        slider1.scrollLeft -= maxScrollLeft;
+    } else {
+        slider1.scrollLeft += 1;
+    }
+}
+
+
+let play = setInterval(autoPlayarriba, 50);
+let play1 = setInterval(autoPlayabajo,50);
+
 
 // PAUSE THE SLIDE ON HOVER
-for (var i=0; i < thumbnails.length; i++){
+for (var i=0; i < thumbnailsarriba.length; i++){
 
-thumbnails[i].addEventListener('mouseover', function() {
+    thumbnailsarriba[i].addEventListener('mouseover', function() {
     clearInterval(play);
 });
 
-thumbnails[i].addEventListener('mouseout', function() {
-    return play = setInterval(autoPlay, 50);
+    thumbnailsarriba[i].addEventListener('mouseout', function() {
+    return play = setInterval(autoPlayarriba, 50);
 });
+}
+
+for (var i=0; i < thumbnailsabajo.length; i++){
+
+    thumbnailsabajo[i].addEventListener('mouseover', function() {
+        clearInterval(play1);
+    });
+    
+    thumbnailsabajo[i].addEventListener('mouseout', function() {
+        return play1 = setInterval(autoPlayabajo, 50);
+    });
 }
