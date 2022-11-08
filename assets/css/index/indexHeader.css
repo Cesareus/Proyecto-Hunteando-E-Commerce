@@ -6,22 +6,24 @@
     background-color: #000000;
     width: 100%;
     height: 44px;
-    display: flex;
-    justify-content: flex-end;
     padding: 10px 20px;
     
 }
+.encabezado__Ayuda-Menu{
+    display: grid;
+    height: 50%;
+    grid-template-columns: repeat(3,1fr);
+    float: right;
+    gap: 3rem;
+}
+.encabezado__Ayuda-Menu>li{
+    display: flex;
+    align-items: center;
+}
 .encabezado__Ayuda>ul>li>a{
-    margin-right: 20px;
+    margin-left: .5rem;
     color: #ffffff;
 
-}
-.encabezado__Ayuda-Menu,.encabezado__Login-Menu{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-left: 5%;
-    gap: 90px;
-    list-style: none;
 }
 .encabezado__Ayuda-Menu>li>a,.encabezado__Login-Menu>li>a{
     color: #ffffff;
@@ -29,6 +31,32 @@
 }
 .encabezado__Ayuda-Menu>li>a:hover{
     text-decoration: underline !important;
+}
+.encabezado__Login-Menu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 5%;
+    gap: 90px;
+    list-style: none;
+}
+.encabezado__buscador{
+    padding-left: 2%;
+    width: 759px; 
+    height: 50px; 
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.encabezado__buscador:focus{
+    outline: none;
+    border: 1px solid var(--color-primary);
+}
+.encabezado__buscador::placeholder{
+    padding-left: 1%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 .encabezado__container{
     display: grid;

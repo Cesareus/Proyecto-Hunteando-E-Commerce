@@ -14,10 +14,8 @@
     <link rel="stylesheet" href="./assets/css/index/index.css">
     <link rel="stylesheet" href="./assets/css/index/indexHeader.css">
     <link rel="stylesheet" href="assets/css/index/indexFooter.css">
+ 
     
-    <!-- añadiendo bootstap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- Fuente del Proyecto Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,16 +26,31 @@
 <body class="app">
     <header class="encabezado">
         <section class="encabezado__Ayuda ">
-            <ul class="nav justify-content-end pr-4 encabezado__Ayuda-Menu">
-                <li class="nav-item"><a href="" class="text-decoration-none">Segui tu compra</a></li>
-                <li class="nav-item"><a href="" class="text-decoration-none">Retira tu compra</a></li>
-                <li class="nav-item">
-                    <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.6403 2.94965H6.14392C5.28987 2.95208 4.47149 3.29242 3.86758 3.89633C3.26368 4.50024 2.92333 5.31862 2.9209 6.17267V17.223C2.92333 18.0771 3.26368 18.8955 3.86758 19.4994C4.47149 20.1033 5.28987 20.4436 6.14392 20.4461H8.44608V25.0504L13.84 20.5531C13.9229 20.4839 14.0274 20.446 14.1353 20.4461H23.6403C24.4944 20.4436 25.3128 20.1033 25.9167 19.4994C26.5206 18.8955 26.8609 18.0771 26.8634 17.223V6.17267C26.8609 5.31862 26.5206 4.50024 25.9167 3.89633C25.3128 3.29242 24.4944 2.95208 23.6403 2.94965V2.94965Z" stroke="white" stroke-width="4" stroke-linejoin="round"/>
-                        <path d="M9.36687 13.5396C10.384 13.5396 11.2086 12.715 11.2086 11.6978C11.2086 10.6807 10.384 9.85611 9.36687 9.85611C8.34972 9.85611 7.52515 10.6807 7.52515 11.6978C7.52515 12.715 8.34972 13.5396 9.36687 13.5396Z" fill="white"/>
-                        <path d="M14.892 13.5396C15.9092 13.5396 16.7337 12.715 16.7337 11.6978C16.7337 10.6807 15.9092 9.85611 14.892 9.85611C13.8749 9.85611 13.0503 10.6807 13.0503 11.6978C13.0503 12.715 13.8749 13.5396 14.892 13.5396Z" fill="white"/>
-                        <path d="M20.4172 13.5396C21.4343 13.5396 22.2589 12.715 22.2589 11.6978C22.2589 10.6807 21.4343 9.85611 20.4172 9.85611C19.4 9.85611 18.5754 10.6807 18.5754 11.6978C18.5754 12.715 19.4 13.5396 20.4172 13.5396Z" fill="white"/>
-                        </svg>
+            <ul class="encabezado__Ayuda-Menu">
+                <li >
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 14H15.1667C16.45 14 17.5 13.1 17.5 12V2H7.00001C5.25001 2 3.72168 2.83 2.92834 4.05" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2.33337 17C2.33337 18.66 3.89671 20 5.83337 20H7.00004C7.00004 18.9 8.05004 18 9.33337 18C10.6167 18 11.6667 18.9 11.6667 20H16.3334C16.3334 18.9 17.3834 18 18.6667 18C19.95 18 21 18.9 21 20H22.1667C24.1034 20 25.6667 18.66 25.6667 17V14H22.1667C21.525 14 21 13.55 21 13V10C21 9.45 21.525 9 22.1667 9H23.6717L21.6767 6.01C21.4712 5.70402 21.1755 5.44968 20.8192 5.27243C20.4629 5.09518 20.0586 5.00124 19.6467 5H17.5V12C17.5 13.1 16.45 14 15.1667 14H14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2.33337 8H9.33337M2.33337 11H7.00004M2.33337 14H4.66671M9.33337 22C9.95221 22 10.5457 21.7893 10.9833 21.4142C11.4209 21.0391 11.6667 20.5304 11.6667 20C11.6667 19.4696 11.4209 18.9609 10.9833 18.5858C10.5457 18.2107 9.95221 18 9.33337 18C8.71454 18 8.12104 18.2107 7.68346 18.5858C7.24587 18.9609 7.00004 19.4696 7.00004 20C7.00004 20.5304 7.24587 21.0391 7.68346 21.4142C8.12104 21.7893 8.71454 22 9.33337 22V22ZM18.6667 22C19.2855 22 19.879 21.7893 20.3166 21.4142C20.7542 21.0391 21 20.5304 21 20C21 19.4696 20.7542 18.9609 20.3166 18.5858C19.879 18.2107 19.2855 18 18.6667 18C18.0479 18 17.4544 18.2107 17.0168 18.5858C16.5792 18.9609 16.3334 19.4696 16.3334 20C16.3334 20.5304 16.5792 21.0391 17.0168 21.4142C17.4544 21.7893 18.0479 22 18.6667 22ZM25.6667 12V14H22.1667C21.525 14 21 13.55 21 13V10C21 9.45 21.525 9 22.1667 9H23.6717L25.6667 12Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                  <a href="" >Segui tu compra</a></li>
+                <li >
+                  <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.26086 11.22V15.71C3.26086 20.2 5.21086 22 10.075 22H15.9142C20.7784 22 22.7284 20.2 22.7284 15.71V11.22" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13 12C14.9825 12 16.445 10.51 16.25 8.68L15.535 2H10.4758L9.74999 8.68C9.55499 10.51 11.0175 12 13 12Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19.8358 12C22.0242 12 23.6275 10.36 23.4108 8.35L23.1075 5.6C22.7175 3 21.6342 2 18.7958 2H15.4917L16.25 9.01C16.4342 10.66 18.0483 12 19.8358 12ZM6.10999 12C7.8975 12 9.51166 10.66 9.68499 9.01L9.92333 6.8L10.4433 2H7.13916C4.30083 2 3.21749 3 2.82749 5.6L2.53499 8.35C2.31833 10.36 3.92166 12 6.10999 12ZM13 17C11.1908 17 10.2917 17.83 10.2917 19.5V22H15.7083V19.5C15.7083 17.83 14.8092 17 13 17Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                  <a href="" >Retira tu compra</a></li>
+                <li >
+                  <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.6403 1.94965H5.14392C4.28987 1.95208 3.47149 2.29242 2.86758 2.89633C2.26368 3.50024 1.92333 4.31862 1.9209 5.17267V16.223C1.92333 17.0771 2.26368 17.8955 2.86758 18.4994C3.47149 19.1033 4.28987 19.4436 5.14392 19.4461H7.44608V24.0504L12.84 19.5531C12.9229 19.4839 13.0274 19.446 13.1353 19.4461H22.6403C23.4944 19.4436 24.3128 19.1033 24.9167 18.4994C25.5206 17.8955 25.8609 17.0771 25.8634 16.223V5.17267C25.8609 4.31862 25.5206 3.50024 24.9167 2.89633C24.3128 2.29242 23.4944 1.95208 22.6403 1.94965V1.94965Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M8.36687 12.5396C9.38403 12.5396 10.2086 11.715 10.2086 10.6978C10.2086 9.68068 9.38403 8.85611 8.36687 8.85611C7.34972 8.85611 6.52515 9.68068 6.52515 10.6978C6.52515 11.715 7.34972 12.5396 8.36687 12.5396Z" fill="white"/>
+                    <path d="M13.892 12.5396C14.9092 12.5396 15.7337 11.715 15.7337 10.6978C15.7337 9.68068 14.9092 8.85611 13.892 8.85611C12.8749 8.85611 12.0503 9.68068 12.0503 10.6978C12.0503 11.715 12.8749 12.5396 13.892 12.5396Z" fill="white"/>
+                    <path d="M19.4172 12.5396C20.4343 12.5396 21.2589 11.715 21.2589 10.6978C21.2589 9.68068 20.4343 8.85611 19.4172 8.85611C18.4 8.85611 17.5754 9.68068 17.5754 10.6978C17.5754 11.715 18.4 12.5396 19.4172 12.5396Z" fill="white"/>
+                    </svg>
+                    
                         
                     <a href="" class="text-decoration-none">
                         Ayuda</a></li>
@@ -48,9 +61,9 @@
             <div class="encabezado__logo">
                 <img src="./assets/img/logo/logo_talyx.svg" alt="Logo Talyx">
             </div>
-            <div class="form-outline ">
-                <input type="search" id="form1" class="form-control" placeholder="¿Qué estás buscando?"
-                aria-label="Search" style="width: 759px; height: 50px;" />
+            <div class="encabezado__buscador-container ">
+                <input type="search" id="form1" class="encabezado__buscador" placeholder="¿Qué estás buscando?"
+                aria-label="Search" />
             </div>
             <div class="encabezado__LoginMenu">
               <ul class="encabezado__LoginMenu--lista">
@@ -380,8 +393,8 @@
 
     
     
+    </body>
     <script type="text/javascript" src="https://kit.fontawesome.com/450bc1455c.js" crossorigin="anonymous"></script>
     <script src="./assets/Js/slider.js"></script>
-</body>
 
 </html>
