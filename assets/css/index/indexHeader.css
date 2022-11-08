@@ -38,6 +38,9 @@
     height: 10vh;
     align-items: center;
 }
+.form-outline{
+    width: 30rem;
+}
 
 .encabezado__logo{    
     display: flex;
