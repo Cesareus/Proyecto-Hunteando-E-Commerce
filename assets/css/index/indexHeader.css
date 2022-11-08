@@ -31,12 +31,11 @@
     text-decoration: underline !important;
 }
 .encabezado__container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     background-color: var(--fondo-azul);
-    flex-wrap:wrap;
     width: 100%;
     align-items: center;
-    
 }
 
 .encabezado__logo{
@@ -87,7 +86,7 @@
 }
 
 .fa {
-    color: #ff4f11;
+    color: var(--color-primary);
 }
 
 
