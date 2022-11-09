@@ -32,16 +32,39 @@
 .encabezado__Ayuda-Menu>li>a:hover{
     text-decoration: underline !important;
 }
-.encabezado__Login-Menu{
+
+.encabezado__container{
+    background-color: var(--fondo-azul);
+    width: 100%;
+    min-height: 10vh;
+    padding: 10px 20px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-left: 5%;
-    gap: 90px;
-    list-style: none;
+    grid-template-columns: 0.6fr 1.8fr 1.3fr;
+    align-items: center;
+    overflow: hidden;
 }
+
+
+.encabezado__logo{    
+    display: flex;
+    justify-content: center;      
+    
+}
+.encabezado__logo>img{ 
+    width: 11rem;   
+}
+
+.encabezado__buscador-container{
+    padding-left: 30px;
+    display: flex;
+    justify-content: center; 
+
+}
+
 .encabezado__buscador{
     padding-left: 2%;
-    width: 759px; 
+    width: 100%;
+    max-width: 759px; 
     height: 50px; 
     border-radius: 6px;
     font-weight: 400;
@@ -58,23 +81,19 @@
     font-size: 16px;
     line-height: 24px;
 }
-.encabezado__container{
+
+.encabezado__LoginMenu{
     display: grid;
-    grid-template-columns: 0.6fr 1.8fr 1.3fr;
-    background-color: var(--fondo-azul);
-    width: 100vw;
-    height: 10vh;
-    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 90px;
+    list-style: none;
+    width:30rem;
 }
 
-.encabezado__logo{    
-    display: flex;
-    justify-content: center;      
-    
-}
-.encabezado__logo>img{ 
-    width: 11rem;   
-}
+
+
 .encabezado__LoginMenu{
     width: 30rem;
     
@@ -82,6 +101,8 @@
 .encabezado__LoginMenu--lista{
     display: flex;
     list-style-type: none;    
+    width: 100%;
+    justify-content:space-between;
       
 } 
 .encabezado__LoginMenu--lista li:first-child{    
@@ -109,6 +130,7 @@
     display: grid;
     height: 72px;
     width: 100%;
+    overflow: hidden;    
 }
 .encabezado__menu>ul{
     margin-top: 36px;
@@ -137,7 +159,7 @@
 /* Style The Dropdown Button */
 .dropbtn {
     
-    color: white;
+    /* color: white; */
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -158,6 +180,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    padding:1rem;
   }
   
   /* Links inside the dropdown */
@@ -180,3 +203,84 @@
   .dropdown:hover .dropbtn {
     background-color: #361868;
   } */
+ /* Código  -  https://github.com/eduardofierropro/eduardofierropro-Como-crear-un-menu-hamburguesa-horizontal/blob/main/1-menu-horizontal/css/app.css*/
+
+
+ .encabezado__menu {
+    margin:0 auto;
+  }
+  
+  .encabezado__menu .button{
+    /* background-color: crimson; */
+    display: none;
+    border:none;
+    text-align: start;
+  }
+  .encabezado__menu .svg{
+    width:4em;
+    height:4em;
+    /* fill:white; */
+  }
+
+  .encabezado__menu  .ul{
+    margin-right: 5%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 36px;
+    list-style: none;
+    
+  }
+  .encabezado__menu  .li{
+    margin: 0 .5em;
+  }
+  
+  @media screen and (max-width:925px){
+    .encabezado__container{        
+        grid-template-columns: 40% 1fr; /*0.6fr 1.8fr 1.3fr; */
+    }
+    .encabezado__menu  .button{
+        /* width:100%; */
+      display: block;
+      cursor: pointer;
+    }
+    
+    .encabezado__menu  .nav{
+      width:100%;
+      display: none; 
+      height:0;
+      /* pointer-events: none; */
+      overflow: hidden;
+      transition: all .5s ease;
+  
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .encabezado__menu  .nav.activo{
+      display: block;
+      height:50vh;
+      pointer-events: auto;
+    }
+    .encabezado__menu  .ul{
+      flex-direction: column; 
+    }
+    .encabezado__menu  li{
+      margin: 1rem 0;
+    }
+    
+     .ulMenu{ /*.ulMenu.activo*/
+        position: absolute;   
+        margin-left: -385px;
+        margin-top: 495px;  
+        width: 200px;
+        padding: 1REM;
+        background-color: var(--color-white);
+        box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+     }  
+     .dropdown-content {
+       margin-left: 145px;
+      }
+  }
