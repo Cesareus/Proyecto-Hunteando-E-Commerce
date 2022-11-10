@@ -16,15 +16,18 @@
     margin: 0 0 19px 60px;
     color: #DEDBDB;
 }
+.footer__info-contacto>a{
+    color: #DEDBDB;
+}
 .footer__info-contacto>h5{
-    color: #ff4f11;
+    color: var(--color-primary);
 }
 .footer__info-copyright>h5{
-    color: #ff4f11;
+    color: var(--color-primary);
 }
 
 .footer__info-suscripcion>h5{
-    color: #ff4f11;
+    color: var(--color-primary);
 }
 .footer__info-suscripcion>input{
     width: 362px;
@@ -34,7 +37,7 @@
 }
 .footer__info-suscripcion>input:focus{
     outline-style: none;
-    border: 1px solid #ff4f11;
+    border: 1px solid var(--color-primary);
 }
 .footer__menu>li>a{
     color:#DEDBDB;

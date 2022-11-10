@@ -142,8 +142,8 @@
     color: #000000;
     text-decoration: none;
 }
-.encabezado__menu>nav>ul>li>a:hover{
-    text-decoration: underline;
+.encabezado__menu>nav>ul>li:hover{
+    border: 1px solid var(--color-primary);
 }
 
 
