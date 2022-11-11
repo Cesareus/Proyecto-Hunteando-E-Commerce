@@ -131,20 +131,20 @@
     display: grid;
     height: 72px;
     width: 100%;
-    overflow: hidden;    
+    overflow: visible;    
 }
-.encabezado__menu>ul{
+.encabezado__menu>nav>ul{
     margin-top: 36px;
     list-style: none;
     display: grid;
     grid-template-columns: repeat(9,200px);
 }
-.encabezado__menu>ul>li>a{
+.encabezado__menu>nav>ul>li>a{
     color: #000000;
     text-decoration: none;
 }
-.encabezado__menu>ul>li>a:hover{
-    text-decoration: underline;
+.encabezado__menu>nav>ul>li:hover{
+    border: 1px solid var(--color-primary);
 }
 
 
