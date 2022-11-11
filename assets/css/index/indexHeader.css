@@ -6,7 +6,7 @@
     background-color: #000000;
     width: 100%;
     height: 44px;
-    padding: 10px 20px;
+    padding: 10px 0px; /*original 10px 20px*/
     
 }
 .encabezado__Ayuda-Menu{
@@ -37,7 +37,7 @@
     background-color: var(--fondo-azul);
     width: 100%;
     min-height: 10vh;
-    padding: 10px 20px;
+    padding: 10px 0px; /*original 10px 20px*/
     display: grid;
     grid-template-columns: 0.6fr 1.8fr 1.3fr;
     align-items: center;
@@ -55,7 +55,7 @@
 }
 
 .encabezado__buscador-container{
-    padding-left: 30px;
+    padding: 0px 30px;/* padding-left: 30px; */
     display: flex;
     justify-content: center; 
 
@@ -126,6 +126,7 @@
 .encabezado__LoginMenu--lista>li>a:hover{
     text-decoration: underline;
 }
+
 .encabezado__menu{
     display: grid;
     height: 72px;
@@ -155,132 +156,149 @@
     color: var(--color-primary);
 }
 
-
 /* Style The Dropdown Button */
 .dropbtn {
-    
-    /* color: white; */
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    padding:1rem;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown 
+
+  /* color: white; */
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 1rem;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown 
   .dropdown:hover .dropbtn {
     background-color: #361868;
   } */
- /* Código  -  https://github.com/eduardofierropro/eduardofierropro-Como-crear-un-menu-hamburguesa-horizontal/blob/main/1-menu-horizontal/css/app.css*/
+/* Código  -  https://github.com/eduardofierropro/eduardofierropro-Como-crear-un-menu-hamburguesa-horizontal/blob/main/1-menu-horizontal/css/app.css*/
 
 
- .encabezado__menu {
-    margin:0 auto;
-  }
-  
-  .encabezado__menu .button{
-    /* background-color: crimson; */
-    display: none;
-    border:none;
-    text-align: start;
-  }
-  .encabezado__menu .svg{
-    width:4em;
-    height:4em;
-    /* fill:white; */
+.encabezado__menu {
+  margin: 0 auto;
+}
+
+.encabezado__menu .button {
+  /* background-color: crimson; */
+  display: none;
+  border: none;
+  text-align: start;
+}
+
+.encabezado__menu .svg {
+  width: 4em;
+  height: 4em;
+  /* fill:white; */
+}
+
+.encabezado__menu .ul {
+  margin-right: 5%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 36px;
+  list-style: none;
+
+}
+
+.encabezado__menu .menu-content {
+  margin: 0 .5em;
+}
+
+@media screen and (max-width:925px) {
+  .encabezado__container {
+    grid-template-columns: 40% 1fr;
+    /*0.6fr 1.8fr 1.3fr; */
   }
 
-  .encabezado__menu  .ul{
-    margin-right: 5%;
+  .section {
+    width: 100%;
+    padding: 1rem;
+
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 36px;
-    list-style: none;
-    
+
+    height: 4rem;
   }
-  .encabezado__menu  .li{
-    margin: 0 .5em;
+
+  .encabezado__menu .button {
+    /* width:100%; */
+    display: block;
+    cursor: pointer;
   }
-  
-  @media screen and (max-width:925px){
-    .encabezado__container{        
-        grid-template-columns: 40% 1fr; /*0.6fr 1.8fr 1.3fr; */
-    }
-    .encabezado__menu  .button{
-        /* width:100%; */
-      display: block;
-      cursor: pointer;
-    }
-    
-    .encabezado__menu  .nav{
-      width:100%;
-      display: none; 
-      height:0;
-      /* pointer-events: none; */
-      overflow: hidden;
-      transition: all .5s ease;
-  
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-    }
-    .encabezado__menu  .nav.activo{
-      display: block;
-      height:50vh;
-      pointer-events: auto;
-    }
-    .encabezado__menu  .ul{
-      flex-direction: column; 
-    }
-    .encabezado__menu  li{
-      margin: 1rem 0;
-    }
-    
-     .ulMenu{ /*.ulMenu.activo*/
-        position: absolute;   
-        margin-left: -385px;
-        margin-top: 495px;  
-        width: 200px;
-        padding: 1REM;
-        background-color: var(--color-white);
-        box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
-     }  
-     /* .dropdown-content {
-       margin-left: 145px;
-      } */
+
+  .encabezado__menu .nav {
+    width: 100%;
+    /* display: none;  */
+    height: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all .5s ease;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
   }
+
+  .encabezado__menu .nav.activo {
+    /* display: block; */
+    height: auto;
+    pointer-events: auto;
+
+    min-width: 12rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(122, 121, 119);
+
+  }
+
+  .encabezado__menu .ul {
+    flex-direction: column;
+  }
+
+  .encabezado__menu li {
+    margin: 1rem 0;
+  }
+
+  .dropdown-content {
+    margin-left: 145px;
+  }
+}
