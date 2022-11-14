@@ -8,11 +8,11 @@ export class productDAO {
     this.conex = new conexion();    
   }
 
-  insertarProducto(dir_imagen, titulo, descripcion, precio) {     
+  insertarProducto(categoria, dir_imagen, titulo, descripcion, precio) {     
     let cone = this.con;   
     cone = this.conex.crearConexion();
-    cone.query(`INSERT INTO productos(dir_imagen, titulo, descripcion, precio)`
-    +` VALUES ("${dir_imagen}", "${titulo}", "${descripcion}", "${precio}")`,
+    cone.query(`INSERT INTO productos(categoria, dir_imagen, titulo, descripcion, precio)`
+    +` VALUES ("${categoria}","${dir_imagen}", "${titulo}", "${descripcion}", "${precio}")`,
       (err) => {
         if (err) throw err;
         console.log("datos insertados");
@@ -26,7 +26,8 @@ export class productDAO {
     cone = this.conex.crearConexion();
     cone.query("select * from productos", function (error, results) {
       if (results) {
-        console.log(results);        
+        console.log(results);
+        return results;        
       } else {
         console.log(error);       
       }

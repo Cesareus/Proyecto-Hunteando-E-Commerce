@@ -23,6 +23,11 @@
   </head>
 
 <body class="app">
+  <script>
+    function imgErrorHTML(image) {
+        image.src = './assets/img/main/destacados/default-img.png';
+    }
+</script>
     <header class="encabezado">
         <section class="encabezado__Ayuda ">
             <ul class="encabezado__Ayuda-Menu">
@@ -120,107 +125,8 @@
               </div>
             </button>
   
-            <div class="mainDestacados__contenedor contenedor__productos" id="contenedor__productos">
-  
-              <div class="mainDestacados__contenedor--card card">
-  
-                <img src="./assets/img/main/destacados/image 7.svg" alt=""
-                  class="mainDestacados__contenedor--cardImg cardImg" />
-  
-                <!-- <span class="mainDestacados__contenedor--cardLine"> <hr> </span> -->
-                <div class="mainDestacados__contenedor--cardDescripcionBox cardDBox">
-                  <span class="mainDestacados__contenedor--cardDescripcion cardDescripcion">BASE- NOTEBOOK K -8068F</span>
-                  <span class="mainDestacados__contenedor--cardPrecio cardPrecio">$4.517,07</span>
-                </div>
-              </div>
-  
-  
-              <div class="mainDestacados__contenedor--card card">
-                <img src="./assets/img/main/destacados/image 8.svg" alt=""
-                  class="mainDestacados__contenedor--cardImg cardImg" />
-                <div class="mainDestacados__contenedor--cardDescripcionBox cardDBox">
-                  <span class="mainDestacados__contenedor--cardDescripcion cardDescripcion">PROTECTOR DE TENSION FORZA 6
-                    BOCAS</span>
-                  <span class="mainDestacados__contenedor--cardPrecio cardPrecio">$4.270,37</span>
-                </div>
-              </div>
-  
-  
-              <div class="mainDestacados__contenedor--card card">
-                <img src="./assets/img/main/destacados/image 9.svg" alt=""
-                  class="mainDestacados__contenedor--cardImg cardImg" />
-                <div class="mainDestacados__contenedor--cardDescripcionBox cardDBox">
-                  <span class="mainDestacados__contenedor--cardDescripcion cardDescripcion">GRASA SILICONADA DELTA (CON
-                    PARTICULAS DE PLATA)</span>
-                  <span class="mainDestacados__contenedor--cardPrecio cardPrecio">$694,44</span>
-                </div>
-              </div>
-  
-              <div class="mainDestacados__contenedor--card card">
-  
-                <img src="./assets/img/main/destacados/image 10.svg" alt=""
-                  class="mainDestacados__contenedor--cardImg cardImg" />
-  
-                <div class="mainDestacados__contenedor--cardDescripcionBox cardDBox">
-                  <span class="mainDestacados__contenedor--cardDescripcion cardDescripcion">RESMA DE PAPEL A4 75GR
-                    BOREAL</span>
-                  <span class="mainDestacados__contenedor--cardPrecio cardPrecio">$1.332,22</span>
-                </div>
-  
-                
-              </div>
-              <!-- extraCards para probar funcionalidad -->
-
-
-
-
-              <div class="mainPotenciatp__contenedor--card card">
-                <img src="./assets/img/main/potencia/image 12.svg" alt=""
-                  class="mainPotenciatp__contenedor--cardImg cardImg" />
-                <div class="mainDestacados__contenedor--cardDescripcionBox cardDBox">
-                  <span class="mainPotenciatp__contenedor--cardDescripcion cardDescripcion">BASE- NOTEBOOK K -8068F</span>
-                  <span class="mainPotenciatp__contenedor--cardPrecio cardPrecio">$4.517,07</span>
-                </div>
-              </div>
-  
-  
-              <div class="mainPotenciatp__contenedor--card card">
-                <img src="./assets/img/main/potencia/image 13.svg" alt=""
-                  class="mainPotenciatp__contenedor--cardImg cardImg" />
-                <div class="mainDestacados__contenedor--cardDescripcionBox cardDBox">
-                  <span class="mainPotenciatp__contenedor--cardDescripcion cardDescripcion">BASE- NOTEBOOK K -8068F</span>
-                  <span class="mainPotenciatp__contenedor--cardPrecio cardPrecio">$4.517,07</span>
-                </div>
-              </div>
-  
-  
-              <div class="mainPotenciatp__contenedor--card card">
-                <img src="./assets/img/main/potencia/image 9.svg" alt=""
-                  class="mainPotenciatp__contenedor--cardImg cardImg" />
-                <div class="mainDestacados__contenedor--cardDescripcionBox cardDBox">
-                  <span class="mainPotenciatp__contenedor--cardDescripcion cardDescripcion">BASE- NOTEBOOK K -8068F</span>
-                  <span class="mainPotenciatp__contenedor--cardPrecio cardPrecio">$4.517,07</span>
-                </div>
-              </div>
-  
-  
-              <div class="mainPotenciatp__contenedor--card card">
-                <img src="./assets/img/main/potencia/image 10.svg" alt=""
-                  class="mainPotenciatp__contenedor--cardImg cardImg" />
-                <div class="mainDestacados__contenedor--cardDescripcionBox cardDBox">
-                  <span class="mainPotenciatp__contenedor--cardDescripcion cardDescripcion">BASE- NOTEBOOK K -8068F</span>
-                  <span class="mainPotenciatp__contenedor--cardPrecio cardPrecio">$4.517,07</span>
-                </div>
-              </div>
-
-              <div class="mainPotenciatp__contenedor--card card">
-                <img src="./assets/img/main/potencia/image 10.svg" alt=""
-                  class="mainPotenciatp__contenedor--cardImg cardImg" />
-                <div class="mainDestacados__contenedor--cardDescripcionBox cardDBox">
-                  <span class="mainPotenciatp__contenedor--cardDescripcion cardDescripcion">BASE- NOTEBOOK K -8068F</span>
-                  <span class="mainPotenciatp__contenedor--cardPrecio cardPrecio">$4.517,07</span>
-                </div>
-              </div>
+            <div class="mainDestacados__contenedor contenedor__productos" id="contenedor__productos" mainDestacadosP>
+                            
             </div>
 
             <button class="mainDestacados__contenedor--buttonright bt__slider bt__sliderRight" id="bt__sliderRight-destacados">
@@ -246,7 +152,7 @@
               </div>
             </button>
   
-            <div class="mainPotenciatp__contenedor contenedor__productos" id="contenedor__potencia">
+            <div class="mainPotenciatp__contenedor contenedor__productos" id="contenedor__potencia" mainPotenciatpP>
   
               <div class="mainPotenciatp__contenedor--card card">
                 <img src="./assets/img/main/potencia/image 12.svg" alt=""
@@ -393,14 +299,5 @@
     
     
     </body>
-    <script src="./assets/Js/connection/conexion.js" type="module">      
-    </script>
-    <script src="./assets/Js/DAO/productDAO.js" type="module">      
-      import {productDAO} from "./assets/Js/DAO/productDAO.js"
-      const producto = new ProductDAO();
-      producto.leerProductos();
-    </script>
-    <script type="text/javascript" src="https://kit.fontawesome.com/450bc1455c.js" crossorigin="anonymous"></script>
-    <script src="./assets/Js/slider.js"></script>
-
+    <script type="module" src="./assets/Js/controllers/indexController.js"></script>
 </html>
