@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="./assets/css/gridGeneral.css">
     <link rel="stylesheet" href="./assets/css/index/index.css">
     <link rel="stylesheet" href="./assets/css/index/indexHeader.css">
-    <link rel="stylesheet" href="assets/css/index/indexFooter.css">
- 
+    <link rel="stylesheet" href="assets/css/index/indexFooter.css">  
     
     <!-- Fuente del Proyecto Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -394,6 +393,13 @@
     
     
     </body>
+    <script src="./assets/Js/connection/conexion.js" type="module">      
+    </script>
+    <script src="./assets/Js/DAO/productDAO.js" type="module">      
+      import {productDAO} from "./assets/Js/DAO/productDAO.js"
+      const producto = new ProductDAO();
+      producto.leerProductos();
+    </script>
     <script type="text/javascript" src="https://kit.fontawesome.com/450bc1455c.js" crossorigin="anonymous"></script>
     <script src="./assets/Js/slider.js"></script>
 
