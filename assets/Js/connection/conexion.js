@@ -2,8 +2,7 @@ import * as mysql from "../../../node_modules/mysql/index.js"
 
 
 export class conexion {
-     config;
-     connection;
+     config;   
 
     constructor() {
         this.config = {
@@ -15,7 +14,8 @@ export class conexion {
     }
 
     crearConexion() {
-        return this.connection = mysql.createConnection(this.config);      
+        let connection
+        return connection = mysql.createConnection(this.config);      
     }
   
 }

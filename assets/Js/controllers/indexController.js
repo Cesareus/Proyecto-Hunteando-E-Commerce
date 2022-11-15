@@ -1,5 +1,4 @@
 import {productDAO} from "../DAO/productDAO.js";
-console.log(productosServices);
 
 const Productosclass = new productDAO();
 
@@ -24,6 +23,7 @@ const render = async () =>{
   try {
     
     const listaProductos = await Productosclass.leerProductos();
+    console.log(listaProductos);
     listaProductos.forEach(elemento => {      
         if(elemento.categoria == "Destacados"){
           productos = document.querySelector("[mainDestacadosP]");
