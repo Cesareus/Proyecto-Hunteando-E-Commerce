@@ -5,6 +5,12 @@
     height: 100%;
     align-items: center;
 }
+.footer__menu>li{
+    border: 1px solid transparent;
+}
+.footer__menu>li:hover{
+    border: 1px solid #ffffff;
+}
 .footer__info{
     height: 184px;
     background-color:var(--fondo-azul);
@@ -15,19 +21,35 @@
 .footer__info-contacto{
     margin: 0 0 19px 60px;
     color: #DEDBDB;
+    
 }
 .footer__info-contacto>a{
     color: #DEDBDB;
+    font-size: 16px;
+    line-height: 21px;
 }
+
 .footer__info-contacto>h5{
     color: var(--color-primary);
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
 }
 .footer__info-copyright>h5{
     color: var(--color-primary);
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+   
 }
 
 .footer__info-suscripcion>h5{
     color: var(--color-primary);
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
 }
 .footer__info-suscripcion>input{
     width: 362px;

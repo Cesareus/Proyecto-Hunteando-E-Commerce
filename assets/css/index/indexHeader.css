@@ -12,10 +12,12 @@
 .encabezado__Ayuda-Menu{
     display: grid;
     height: 50%;
-   margin-left: 20%;
+    margin-left: 20%;
     grid-template-columns: repeat(3,15%);
+    grid-template-rows: 250%;
     justify-items: center;
     column-gap: 10%;
+    align-items: end;
 }
 .encabezado__Ayuda-Menu>li{
   padding: 5px;
@@ -26,6 +28,7 @@
 .encabezado__Ayuda>ul>li>a{
     margin-left: .5rem;
     color: #ffffff;
+    font-size: 21px;
 
 }
 .encabezado__Ayuda-Menu>li>a,.encabezado__Login-Menu>li>a{
