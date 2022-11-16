@@ -11,7 +11,7 @@ let buttonPotenciaLeft = document.getElementById('bt__sliderLeft-potencia');
 
 buttonDestacadosLeft.addEventListener('click', function(){
     slider.scrollLeft -= 125;
-    console.log("boton left clickeado", thumbnails.length);
+    console.log("boton left clickeado");
 })
 
 buttonDestacadosRight.addEventListener('click', function(){
@@ -31,6 +31,7 @@ buttonPotenciaRight.addEventListener('click', function(){
 
 
 const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+const maxScrollLeft1 = slider1.scrollWidth - slider1.clientWidth;
 //alert(maxScrollLeft);
 //alert("Left Scroll:" + slider.scrollLeft);
 
@@ -44,8 +45,8 @@ function autoPlayarriba() {
 }
 
 function autoPlayabajo(){
-    if (slider1.scrollLeft > (maxScrollLeft - 1)) {
-        slider1.scrollLeft -= maxScrollLeft;
+    if (slider1.scrollLeft > (maxScrollLeft1 - 1)) {
+        slider1.scrollLeft -= maxScrollLeft1;
     } else {
         slider1.scrollLeft += 1;
     }
