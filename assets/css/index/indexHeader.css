@@ -12,11 +12,14 @@
 .encabezado__Ayuda-Menu{
     display: grid;
     height: 50%;
-    grid-template-columns: repeat(3,1fr);
-    float: right;
-    gap: 3rem;
+   margin-left: 20%;
+    grid-template-columns: repeat(3,15%);
+    justify-items: center;
+    column-gap: 10%;
 }
 .encabezado__Ayuda-Menu>li{
+  padding: 5px;
+    border: 1px solid transparent;
     display: flex;
     align-items: center;
 }
@@ -29,8 +32,8 @@
     color: #ffffff;
     text-decoration: none;
 }
-.encabezado__Ayuda-Menu>li>a:hover{
-    text-decoration: underline !important;
+.encabezado__Ayuda-Menu>li:hover{
+    border: 1px solid #ffffff;
 }
 
 .encabezado__container{
@@ -132,17 +135,25 @@
     height: 72px;
     width: 100%;
     overflow: visible;    
+    align-content: end;
 }
 .encabezado__menu>nav>ul{
     margin-top: 36px;
     list-style: none;
     display: grid;
     grid-template-columns: repeat(9,200px);
+    
+}
+.encabezado__menu>nav>ul>li{
+  border: 1px solid transparent;
+  padding: 5px;
 }
 .encabezado__menu>nav>ul>li>a{
     color: #000000;
     text-decoration: none;
+    
 }
+
 .encabezado__menu>nav>ul>li:hover{
     border: 1px solid var(--color-primary);
 }
