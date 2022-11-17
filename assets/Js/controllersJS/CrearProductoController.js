@@ -11,19 +11,20 @@ function guardar(categoria, dir_imagen, titulo, descripcion, precio){
             // Se debería cargar la página admin y llamar a la función que muestre los datos 
             // en la misma
             console.log("Datos enviados");
+            // éstos condicionales hacen que la página se recargue solo una vez
             if (window.localStorage) {
   
-                // If there is no item as 'reload'
-                // in localstorage then create one &
-                // reload the page
+                // Si no hay un 'reload'
+                // en localStorage crea uno &
+                // recarga la página
                 if (!localStorage.getItem('reload')) {
                     localStorage['reload'] = true;
                     window.location.reload();
                 } else {
   
-                    // If there exists a 'reload' item
-                    // then clear the 'reload' item in
-                    // local storage
+                    // Si ya existe un 'reload' item
+                    // entonce borra el 'reload' item en
+                    // localStorage
                     localStorage.removeItem('reload');
                 }
             }
@@ -37,4 +38,4 @@ function guardar(categoria, dir_imagen, titulo, descripcion, precio){
     });
 }
 
-guardar("Destacados", "./assets/img/main/destacados/image 9.png", "papa", "saracatunga", 1234);
+//guardar("Destacados", "./assets/img/main/destacados/image 9.png", "papa", "saracatunga", 1234);
