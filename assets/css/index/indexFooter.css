@@ -1,3 +1,8 @@
+footer{
+    grid-area: footer;
+    background-color:fuchsia;
+}
+
 .footer__menu{
     list-style: none;
     display: flex;
@@ -70,4 +75,10 @@
 .footer__menu-container{
     background-color: #2d2d33;
     height: 100%;
+}
+
+/* pruebas inutiles*/
+.piedepagina{
+    background-color:fuchsia;
+    height:500px
 }

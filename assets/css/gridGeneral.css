@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 body {       
     font-family: var(--fuente_principal);
+    font-size: 1.5rem;
     margin: 0;
     padding: 0;
     line-height: 1; 

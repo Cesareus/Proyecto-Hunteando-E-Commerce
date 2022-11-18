@@ -4,10 +4,17 @@
 
 	
 	class Conexion{
+<<<<<<< HEAD
 		private $host;  // en pc naty "localhost:3310"
 		private $dbname;
 		private $user;
 		private $password;
+=======
+		private $host = "localhost:3310"; // en pc naty "localhost:3310"
+		private $dbname = "e_commerce";
+		private $user = "cesar";
+		private $password = "cesar";
+>>>>>>> origin/front
 		private $conexion = null;
 
 		public function __construct()
