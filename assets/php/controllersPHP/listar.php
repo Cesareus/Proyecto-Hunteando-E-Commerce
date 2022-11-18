@@ -5,6 +5,7 @@
     $conexion = new Conexion();
     $cnn = $conexion->getConexion();
     $sql = "SELECT * FROM productos";
+    echo "console.log($sql)";
     $statement = $cnn->prepare($sql);
     $valor = $statement->execute(); #devuelve true or false
 
