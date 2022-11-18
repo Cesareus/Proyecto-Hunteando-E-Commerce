@@ -2,7 +2,7 @@
 
 
 	class Conexion{
-		private $host = "localhost"; // en pc naty "localhost:3310"
+		private $host = "localhost:3310"; // en pc naty "localhost:3310"
 		private $dbname = "e_commerce";
 		private $user = "cesar";
 		private $password = "cesar";
