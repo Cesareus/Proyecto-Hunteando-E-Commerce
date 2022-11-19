@@ -24,7 +24,7 @@ var clase;
 const render = () => {
   /* console.log("listarProductos ejecutado"); */
   try {    
-      productosServices.ajax("./assets/php/controllersPHP/listar.php", "").done(function (info) {
+      productosServices.ajax("http://c1392137.ferozo.com/assets/php/controllersPHP/listar.php", "").done(function (info) {
         //console.log(info);
         var lista = JSON.parse(info);
         var listaProductos =lista.data;
