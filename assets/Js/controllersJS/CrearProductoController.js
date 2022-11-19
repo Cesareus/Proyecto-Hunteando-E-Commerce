@@ -2,7 +2,7 @@ import { productosServices } from "../servicesJS/services.js";
 
 function guardar(categoria, dir_imagen, titulo, descripcion, precio){
     var array = [categoria, dir_imagen, titulo, descripcion, precio]
-    productosServices.ajax("./assets/php/controllersPHP/guardar.php",{"array": array})
+    productosServices.ajax("https://agile-meadow-55328.herokuapp.com/https://c1392137.ferozo.com/assets/php/controllersPHP/guardar.php",{"array": array})
     .done(function(info){
         if(info){
             //$("#data_enviada").html(`<h3 class ="text-success">Se han registrado los datos</h3>`);

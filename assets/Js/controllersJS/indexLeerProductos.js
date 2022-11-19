@@ -24,7 +24,7 @@ var clase;
 const render = () => {
   /* console.log("listarProductos ejecutado"); */
   try {    
-      productosServices.ajax("https://agile-meadow-55328.herokuapp.com/http://c1392137.ferozo.com/assets/php/controllersPHP/listar.php", "").done(function (info) {
+      productosServices.ajax("https://agile-meadow-55328.herokuapp.com/https://c1392137.ferozo.com/assets/php/controllersPHP/listar.php", "").done(function (info) {
         //console.log(info);
         var lista = JSON.parse(info);
         var listaProductos =lista.data;
