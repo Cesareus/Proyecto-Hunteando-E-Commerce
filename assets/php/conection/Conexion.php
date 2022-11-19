@@ -2,10 +2,10 @@
 
 
 class Conexion{
-	private $host = "localhost"; // en pc naty "localhost:3310"
+	private $host = "sql10.freemysqlhosting.net"; // en pc naty "localhost:3310"
 	private $dbname = "e_commerce";
-	private $user = "cesar";
-	private $password = "cesar";
+	private $user = "sql10578598";
+	private $password = "Gdgh3uqnnh";
 	private $conexion = null;
 
 	public function getConexion(){
