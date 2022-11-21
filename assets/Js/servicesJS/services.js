@@ -1,6 +1,5 @@
 const ajax = (url, data) =>{
-    var ajax = $.ajax({    
-        "dataType": 'json',    
+    var ajax = $.ajax({         
         "method": "POST",
         "url": url,
         "data": data
