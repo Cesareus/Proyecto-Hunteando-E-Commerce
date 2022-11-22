@@ -51,21 +51,7 @@
     /* font-size: 1vw;  el tamaño de la fuente esta definido en grid general*/
 
 }
-@media screen and (max-width:885px){
-  .encabezado__Ayuda>ul>li>a{
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width:749px){
-  .encabezado__Ayuda>ul>li>a{   
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width:659px){
-  .encabezado__Ayuda>ul>li>a{
-    display:none;
-}
-}
+
 .encabezado__Ayuda-Menu>li>a,.encabezado__Login-Menu>li>a{
     color: #ffffff;
     text-decoration: none;
@@ -110,7 +96,7 @@
     padding-left: 2%;
     width: 100%;
     max-width: 76rem; 
-    height: 50px; 
+    height: 5rem; 
     border-radius: 6px;
     font-weight: 400;
     /* font-size: 16px;  el tamaño de la fuente esta definido en grid general*/
@@ -141,26 +127,35 @@
     width: 100%;
     justify-content:space-between; */
   } 
+
+  .encabezado__LoginMenu--lista>li{
+    padding: 0.2rem;
+    margin:0.2rem auto;
+    width:96%;
+    height: 5rem;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .user {
     grid-column: 1/2;
-    /* background-color: yellowgreen; */
-    width: 100%;
-    padding:2rem 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .carrito {
     grid-column: 2/3;
-    /* background-color: purple; */
-    width: 100%;
-    padding:2rem 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-
-
+  
+  .encabezado__LoginMenu--lista>li>svg{
+    height:3rem;
+    /* height:100%; */
+    display: flex;
+    margin:1rem;
+    /* background-color:aqua; */
+    justify-content:center;
+    align-items: center;
+  
+}
 .encabezado__LoginMenu--lista>li>a{
     color: var(--color-ligth);
     text-decoration: none;
@@ -171,17 +166,28 @@
 
 .encabezado__menu{
     display: grid;
-    height: 72px;
+    height: 7rem;
     width: 100%;
     overflow: visible;    
-    align-content: end;
+    align-content: center;
 }
-.encabezado__menu>nav>ul{
+/* .encabezado__menu>nav>ul{
     margin-top: 36px;
     list-style: none;
     display: grid;
     grid-template-columns: repeat(9,200px);
-    
+    grid-template-columns: 5% 10% 10% 10% 10% 10% 10% 10% 10% 10% 5%;
+} */
+
+.encabezado__menu .ul {
+  margin: 0 3%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 36px; */
+  list-style: none;
+
 }
 .encabezado__menu>nav>ul>li{
   border: 1px solid transparent;
@@ -258,6 +264,7 @@
 /* Código  -  https://github.com/eduardofierropro/eduardofierropro-Como-crear-un-menu-hamburguesa-horizontal/blob/main/1-menu-horizontal/css/app.css*/
 
 
+
 .encabezado__menu {
   margin: 0 auto;
 }
@@ -275,24 +282,39 @@
   /* fill:white; */
 }
 
-.encabezado__menu .ul {
-  margin-right: 5%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 36px;
-  list-style: none;
-
-}
-
 .encabezado__menu .menu-content {
   margin: 0 .5em;
 }
 
-@media screen and (max-width:925px) {
-  
 
+
+@media screen and (max-width:1144){
+  /* en este punto se "rompe" el menu de categorias*/
+  .op6{
+    display:none;
+  }
+  .op5{
+    background-color:palevioletred; 
+  }
+}
+@media screen and (max-width:1034){ 
+  .op5{
+    display:none;
+  }
+  .op4{
+    background-color:peru;
+  }
+}
+@media screen and (max-width:949){  
+  .op4{
+    display:none;
+  }
+  .op3{
+    background-color:aqua;
+  }
+}
+
+@media screen and (max-width:925px) {
   .section {
     width: 100%;
     padding: 1rem;
@@ -302,7 +324,7 @@
     justify-content: space-between;
     align-items: center;
 
-    height: 4rem;
+    /* height: 4rem; */
   }
 
   .encabezado__menu .button {
@@ -348,4 +370,23 @@
   .dropdown-content {
     margin-left: 145px;
   }
+}
+
+@media screen and (max-width:885px){
+  .encabezado__Ayuda>ul>li>a{
+    font-size: 1.2rem;
+  }
+  .encabezado__LoginMenu--lista>li>a{
+    display: none;
+}
+}
+@media screen and (max-width:749px){
+  .encabezado__Ayuda>ul>li>a{   
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width:659px){
+  .encabezado__Ayuda>ul>li>a{
+    display:none;
+}
 }
