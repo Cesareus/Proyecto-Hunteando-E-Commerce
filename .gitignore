@@ -1,2 +1,3 @@
 #ignorando config.json por informacion sensible
 ./php/config.json
+./assets/php/conection
