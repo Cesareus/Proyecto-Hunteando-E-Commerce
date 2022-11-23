@@ -63,6 +63,7 @@
 .encabezado__container{
     background-color: var(--fondo-azul);
     width: 100%;
+    height: 10rem;
     min-height: 10vh;
     padding: 10px 0px; /*original 10px 20px*/
     display: grid;
@@ -171,21 +172,14 @@
     overflow: visible;    
     align-content: center;
 }
-/* .encabezado__menu>nav>ul{
-    margin-top: 36px;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(9,200px);
-    grid-template-columns: 5% 10% 10% 10% 10% 10% 10% 10% 10% 10% 5%;
-} */
+
 
 .encabezado__menu .ul {
   margin: 0 3%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
-  /* margin-top: 36px; */
+  align-items: center; 
   list-style: none;
 
 }
@@ -277,40 +271,25 @@
 }
 
 .encabezado__menu .svg {
-  width: 4em;
-  height: 4em;
+  width: 5rem;
+  height: 5rem;
   /* fill:white; */
 }
 
-.encabezado__menu .menu-content {
-  margin: 0 .5em;
-}
-
-
-
-@media screen and (max-width:1144){
+@media screen and (max-width:1044px){
   /* en este punto se "rompe" el menu de categorias*/
-  .op6{
+  .op7{
     display:none;
   } 
-  .op5{
-    background-color:palevioletred; 
-  }
 }
-@media screen and (max-width:1034){ 
-  .op5{
+@media screen and (max-width:1034px){ 
+  .op6{
     display:none;
   }
-  .op4{
-    background-color:peru;
-  }
 }
-@media screen and (max-width:949){  
-  .op4{
+@media screen and (max-width:949px){  
+  .op5{
     display:none;
-  }
-  .op3{
-    background-color:aqua;
   }
 }
 
@@ -321,7 +300,7 @@
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    
     align-items: center;
 
     /* height: 4rem; */
@@ -331,7 +310,7 @@
     /* width:100%; */
     display: block;
     cursor: pointer;
-  }
+  } 
 
   .encabezado__menu .nav {
     width: 100%;
@@ -344,7 +323,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: start;
   }
 
   .encabezado__menu .nav.activo {
@@ -352,15 +331,19 @@
     height: auto;
     pointer-events: auto;
 
-    min-width: 12rem;
-    margin-top: 1rem;
+    width: 40rem;
+    margin-top: 50rem;
+    margin-left: -5rem;
     padding: 1rem;
-    background-color: rgb(122, 121, 119);
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    background-color: #ffffff;
+    z-index:1;
 
   }
 
   .encabezado__menu .ul {
     flex-direction: column;
+    align-items: start;
   }
 
   .encabezado__menu li {
@@ -368,7 +351,8 @@
   }
 
   .dropdown-content {
-    margin-left: 145px;
+    margin-left: 15rem;
+    width: 21rem;
   }
 }
 
