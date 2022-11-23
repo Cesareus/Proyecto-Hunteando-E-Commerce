@@ -1,8 +1,8 @@
 import { productosServices } from "../servicesJS/services.js";
 
-function guardar(categoria, dir_imagen, titulo, descripcion, precio){
-    var array = [categoria, dir_imagen, titulo, descripcion, precio]
-    productosServices.ajax("http://c1392137.ferozo.com/assets/php/controllersPHP/guardar.php/",{"array": array})
+function guardar(categoria, subcategoria, dir_imagen, titulo, descripcion, precio){
+    var array = [categoria, subcategoria, dir_imagen, titulo, descripcion, precio]
+    productosServices.ajax("http://talyx.com.ar/assets/php/controllersPHP/guardar.php/",{"array": array})
     .done(function(info){
         if(info){
             //$("#data_enviada").html(`<h3 class ="text-success">Se han registrado los datos</h3>`);
