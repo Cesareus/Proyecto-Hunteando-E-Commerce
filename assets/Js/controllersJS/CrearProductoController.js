@@ -1,8 +1,15 @@
 import { productosServices } from "../servicesJS/services.js";
 
 function guardar(categoria, subcategoria, dir_imagen, titulo, descripcion, precio){
-    var array = [categoria, subcategoria, dir_imagen, titulo, descripcion, precio]
-    productosServices.ajax("https://talyx.com.ar/assets/php/controllersPHP/guardar.php/",{"array": array})
+    var data = JSON.stringify({        
+        categoria: categoria,
+        subcategoria: subcategoria,
+        dir_imagen: dir_imagen,
+        titulo: titulo,
+        descripcion: descripcion,
+        precio: precio,
+      });
+    productosServices.ajax("./assets/php/controllersproductos/guardar.php",{data: data})
     .done(function(info){
         if(info){
             //$("#data_enviada").html(`<h3 class ="text-success">Se han registrado los datos</h3>`);
@@ -38,4 +45,4 @@ function guardar(categoria, subcategoria, dir_imagen, titulo, descripcion, preci
     });
 }
 
-//guardar("Destacados", "./assets/img/main/destacados/image 9.png", "papa", "saracatunga", 1234);
+//guardar("Destacados","Manijas", "./assets/img/main/destacados/image 9.png", "papa", "saracatunga", 1234);
