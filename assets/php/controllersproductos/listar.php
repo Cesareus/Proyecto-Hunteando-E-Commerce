@@ -1,8 +1,9 @@
 <?php
     include '../conection/Conexion.php'; #este archivo se movio a la carpeta "../conection/Conexion.php", si no funciona actualizar la ruta 
     
-
     $conexion = new Conexion();
+
+    try {    
     $cnn = $conexion->getConexion();
     $sql = "SELECT * FROM productos";
     $statement = $cnn->prepare($sql);
@@ -19,4 +20,6 @@
 	
     $statement->closeCursor();
     $conexion = null;
-	
+} catch (PDOException $e) {
+    echo 'PDOException : ' . $e->getMessage();
+}
