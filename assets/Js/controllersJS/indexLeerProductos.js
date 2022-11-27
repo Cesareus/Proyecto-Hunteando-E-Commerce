@@ -17,8 +17,8 @@ const nuevoProducto = (titulo, precio, dir_imagen, clase) => {
   return tarjeta;
 };
 
-var productos;
-var clase;
+let productos;
+let clase;
 
 
 const render = () => {
@@ -26,8 +26,8 @@ const render = () => {
   try {    
       productosServices.ajax("https://talyx.com.ar/assets/php/controllersPHP/listar.php/", "").done(function (info) {
         //console.log(info);
-        var lista = JSON.parse(info);
-        var listaProductos =lista.data;
+        let lista = JSON.parse(info);
+        let listaProductos =lista.data;
 
         listaProductos.forEach((elemento) => {
           if (elemento.categoria == "Destacados") {

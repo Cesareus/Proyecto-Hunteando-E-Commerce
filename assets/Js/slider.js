@@ -58,7 +58,7 @@ let play1 = setInterval(autoPlayabajo,50);
 
 
 // PAUSE THE SLIDE ON HOVER
-for (var i=0; i < thumbnailsarriba.length; i++){
+for (let i=0; i < thumbnailsarriba.length; i++){
 
     thumbnailsarriba[i].addEventListener('mouseover', function() {
     clearInterval(play);
@@ -69,7 +69,7 @@ for (var i=0; i < thumbnailsarriba.length; i++){
 });
 }
 
-for (var i=0; i < thumbnailsabajo.length; i++){
+for (let i=0; i < thumbnailsabajo.length; i++){
 
     thumbnailsabajo[i].addEventListener('mouseover', function() {
         clearInterval(play1);

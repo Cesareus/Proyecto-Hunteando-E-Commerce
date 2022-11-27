@@ -1,7 +1,7 @@
 import { productosServices } from "../servicesJS/services.js";
 
 function guardar(categoria, subcategoria, dir_imagen, titulo, descripcion, precio){
-    var array = [categoria, subcategoria, dir_imagen, titulo, descripcion, precio]
+    let array = [categoria, subcategoria, dir_imagen, titulo, descripcion, precio]
     productosServices.ajax("https://talyx.com.ar/assets/php/controllersPHP/guardar.php/",{"array": array})
     .done(function(info){
         if(info){
