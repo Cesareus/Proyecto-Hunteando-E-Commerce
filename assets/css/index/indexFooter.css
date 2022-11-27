@@ -16,31 +16,31 @@ footer{
 .footer__menu>li:hover{
     border: 1px solid #ffffff;
 }
-.footer__info{
+.footer__Info{
     height: 184px;
     background-color:var(--fondo-azul);
     padding-top: 28px;
     display: flex;
     justify-content: space-around;
 }
-.footer__info-contacto{
+.footer__Info-Contact{
     margin: 0 0 19px 60px;
     color: #DEDBDB;
     
 }
-.footer__info-contacto>a{
+.footer__Info-Contact>a{
     color: #DEDBDB;
     font-size: 16px;
     line-height: 21px;
 }
 
-.footer__info-contacto>h5{
+.footer__Info-Contact>h5{
     color: var(--color-primary);
     font-size: 16px;
     line-height: 21px;
     font-weight: 700;
 }
-.footer__info-copyright>h5{
+.footer__Info-Copyright>h5{
     color: var(--color-primary);
     margin-bottom: 5px;
     font-size: 16px;
@@ -49,20 +49,20 @@ footer{
    
 }
 
-.footer__info-suscripcion>h5{
+.footer__Info-Suscription>h5{
     color: var(--color-primary);
     margin-bottom: 5px;
     font-size: 16px;
     line-height: 21px;
     font-weight: 700;
 }
-.footer__info-suscripcion>input{
+.footer__Info-Suscription>input{
     width: 362px;
     height: 32px;
     border: 1px solid #ffffff;
     border-radius: 6px;
 }
-.footer__info-suscripcion>input:focus{
+.footer__Info-Suscription>input:focus{
     outline-style: none;
     border: 1px solid var(--color-primary);
 }
