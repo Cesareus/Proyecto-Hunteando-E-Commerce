@@ -1,12 +1,12 @@
-let thumbnailsarriba = document.querySelectorAll('.mainDestacados__contenedor--card');
-let thumbnailsabajo = document.querySelectorAll('.mainPotenciatp__contenedor--card');
-let slider = document.getElementById('contenedor__productos');
-let slider1 = document.getElementById('contenedor__potencia');
+let thumbnailsarriba = document.querySelectorAll('.mainFeatured__Container--Card');
+let thumbnailsabajo = document.querySelectorAll('.mainPowerP__Container--Card');
+let slider = document.getElementById('container__Products');
+let slider1 = document.getElementById('container__Power');
 
-let buttonDestacadosLeft = document.getElementById('bt__sliderLeft-destacados');
-let buttonDestacadosRight = document.getElementById('bt__sliderRight-destacados');
-let buttonPotenciaRight = document.getElementById('bt__sliderRigth-potencia');
-let buttonPotenciaLeft = document.getElementById('bt__sliderLeft-potencia');
+let buttonDestacadosLeft = document.getElementById('bt__SliderLeft-Featured');
+let buttonDestacadosRight = document.getElementById('bt__SliderRight-Featured');
+let buttonPotenciaRight = document.getElementById('bt__SliderRigth-Power');
+let buttonPotenciaLeft = document.getElementById('bt__SliderLeft-Power');
 
 
 buttonDestacadosLeft.addEventListener('click', function(){
@@ -58,7 +58,7 @@ let play1 = setInterval(autoPlayabajo,50);
 
 
 // PAUSE THE SLIDE ON HOVER
-for (var i=0; i < thumbnailsarriba.length; i++){
+for (let i=0; i < thumbnailsarriba.length; i++){
 
     thumbnailsarriba[i].addEventListener('mouseover', function() {
     clearInterval(play);
@@ -69,7 +69,7 @@ for (var i=0; i < thumbnailsarriba.length; i++){
 });
 }
 
-for (var i=0; i < thumbnailsabajo.length; i++){
+for (let i=0; i < thumbnailsabajo.length; i++){
 
     thumbnailsabajo[i].addEventListener('mouseover', function() {
         clearInterval(play1);

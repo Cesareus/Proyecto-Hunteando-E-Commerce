@@ -1,7 +1,7 @@
 import { productosServices } from "./servicesJS/services.js";
 
 const modificar = ( id, categoria, subcategoria, dir_imagen, titulo, descripcion, precio) => {
-  var data = JSON.stringify({
+  let data = JSON.stringify({
     id: id,
     categoria: categoria,
     subcategoria: subcategoria,
