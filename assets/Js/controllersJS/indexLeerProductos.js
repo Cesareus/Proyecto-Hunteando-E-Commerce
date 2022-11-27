@@ -34,22 +34,22 @@ const render = () => {
             console.log(elemento.categoria);
             productos = document.querySelector("[mainDestacadosP]");
             clase ={
-              claseCard:"mainDestacados__contenedor--card",
-              claseImg:"mainDestacados__contenedor--cardImg",
-              claseDiv:"mainDestacados__contenedor--cardDescripcionBox",
-              claseDescrip:"mainDestacados__contenedor--cardDescripcion",
-              ClasePrecio:"mainDestacados__contenedor--cardPrecio"
+              claseCard:"mainFeatured__Container--Card",
+              claseImg:"mainFeatured__Container--cardImg",
+              claseDiv:"mainFeatured__Container--CardDescriptionBox",
+              claseDescrip:"mainFeatured__Container--CardDescription",
+              ClasePrecio:"mainFeatured__Container--CardPrice"
             };
           } else if (elemento.categoria == "Potencia") {
             console.log(elemento.categoria);
             //console.log("if potencia ejecutado")
-            productos = document.querySelector("[mainPotenciatpP]");
+            productos = document.querySelector("[mainPowertP]");
             clase ={
-              claseCard:"mainPotenciatp__contenedor--card",
-              claseImg:"mainPotenciatp__contenedor--cardImg",
-              claseDiv:"mainDestacados__contenedor--cardDescripcionBox",
-              claseDescrip:"mainPotenciatp__contenedor--cardDescripcion",
-              ClasePrecio:"mainPotenciatp__contenedor--cardPrecio"
+              claseCard:"mainPowerP__Container--Card--card",
+              claseImg:"mainPowerP__Container--CardImg",
+              claseDiv:"mainFeatured__Container--CardDescriptionBox",
+              claseDescrip:"mainPowerP__Container--CardDescription",
+              ClasePrecio:"mainPowerP__Container--CardPrice"
             };
           } else {
             console.log("Categoría inexistente");
