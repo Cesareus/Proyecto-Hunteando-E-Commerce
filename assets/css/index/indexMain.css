@@ -40,11 +40,11 @@
     font-weight: 700;
     line-height: 38px;       
 }
-.bt__slider{
+.bt__Slider{
     background: transparent;
     border: none;    
 }
-.btbox__slider{
+.btbox__Slider{
     border: 1px solid #DEDBDB;
     border-radius: 50%;
     height: 3rem; 
@@ -52,7 +52,7 @@
     width: 3rem;  
     /* background-color: aqua; */
 }
-.btnimg__slider {
+.btnimg__Slider {
     color: #DEDBDB;
     height: auto;
     position: absolute;
@@ -61,7 +61,7 @@
     width: 0.9rem; 
 } 
 
-.btbox__slider:hover { 
+.btbox__Slider:hover { 
     background-color: var(--color-primary);    
     transform: scale(1.3);        
 }
