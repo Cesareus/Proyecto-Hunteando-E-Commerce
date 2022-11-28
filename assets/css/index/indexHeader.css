@@ -61,26 +61,17 @@ svg{
     color: #ffffff;
     text-decoration: none;
 }
-/* .header__Help-Menu>li:hover{
-    border: 1px solid #ffffff;
-} */
 .header__Help-Menu>li:hover > a{
   color:var(--color-muted);
 }
-.header__Help-Menu>li:hover > .svgContainer > svg > path{
+.header__Help-Menu>li:hover > .helpSvgContainer > svg > path{
   /* fill:#000000; */
   stroke:var(--color-muted);
 }
-.header__Help-Menu>li:hover > .svgContainer > svg > path.dot{
+.header__Help-Menu>li:hover > .helpSvgContainer > svg > path.dot{
   fill:var(--color-muted);
   stroke:var(--color-muted);
 }
-/* .header__Help-Menu>li>a:hover{ 
-  color:var(--color-primary);
-}
-.header__Help-Menu>li>svg:hover{ 
-  fill:var(--color-primary);
-} */
 .header__Container{
     /* grid-template-columns: 0.6fr 1.8fr 1.3fr; */
     align-items: center;
@@ -212,7 +203,7 @@ svg{
   margin:0.37vw;
   padding: 0.37vw;
   text-align: center;
-  width:16rem;
+  width:10vw;
 }
 .header__Menu>.header__MenuNav>ul>li>a{
     color: #000000;
@@ -225,6 +216,9 @@ svg{
     transform: scale(1.1);
 }
 
+.header__Menu>.header__MenuNav>ul> .op1:hover{    
+  box-shadow:none;    
+}
 
 .fa-angle-down {
     transition: all 0.5s ease;
@@ -232,6 +226,7 @@ svg{
 
 .fa {
     color: var(--color-primary);
+    margin:0 1vw;
 }
 
 /* Style The header__MenuNav-Dropdown Button */
@@ -241,7 +236,7 @@ svg{
   cursor: pointer;
 
   /* color: white; */
-  padding: 16px;
+  /* padding: 16px; */
 }
 
 /* The Container <div> - needed to position the header__MenuNav-Dropdown content */
@@ -255,8 +250,9 @@ svg{
 .header__MenuNav-Dropdown-Content {
   background-color: #f9f9f9;
   display:none;
-  margin-top: 0.5vw;
-  min-width: 16vw;
+  margin-top: 13vw;
+  margin-left: -9vw;
+  min-width: 13.5vw;
   z-index: 1;
   padding: 0.8vw;
   text-align: start;
@@ -274,12 +270,12 @@ svg{
 }
 
 /* Change color of header__MenuNav-Dropdown links on hover */
-.header__MenuNav-Dropdown-Content a:hover {
+/* .header__MenuNav-Dropdown-Content a:hover {
   background-color: #f1f1f1
 }
 .header__MenuNav-Dropdown:hover{
 display: inline-block;
-}
+} */
 
 /* Show the header__MenuNav-Dropdown Menu on hover */
 .header__MenuNav-Dropdown:hover .header__MenuNav-Dropdown-Content {
@@ -312,7 +308,7 @@ display: inline-block;
 }
 
 @media screen and (max-width:1375px){
- .svgContainer{
+ .helpSvgContainer{
       height: 2.3vw;
       width:  2.3vw;
     }
@@ -328,7 +324,7 @@ display: inline-block;
 
 /*celular*/
 @media screen and (max-width:768px){
-  .svgContainer{
+  .helpSvgContainer{
        height: 2.3vw;
        width:  2.3vw;
      }
