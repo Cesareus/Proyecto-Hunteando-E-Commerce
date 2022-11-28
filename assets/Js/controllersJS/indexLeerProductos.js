@@ -17,8 +17,8 @@ const nuevoProducto = (titulo, precio, dir_imagen, clase) => {
   return tarjeta;
 };
 
-var productos;
-var clase;
+let productos;
+let clase;
 
 
 const render = () => {
@@ -26,30 +26,30 @@ const render = () => {
   try {    
       productosServices.ajax("https://talyx.com.ar/assets/php/controllersPHP/listar.php/", "").done(function (info) {
         //console.log(info);
-        var lista = JSON.parse(info);
-        var listaProductos =lista.data;
+        let lista = JSON.parse(info);
+        let listaProductos =lista.data;
 
         listaProductos.forEach((elemento) => {
           if (elemento.categoria == "Destacados") {
             console.log(elemento.categoria);
             productos = document.querySelector("[mainDestacadosP]");
             clase ={
-              claseCard:"mainDestacados__contenedor--card",
-              claseImg:"mainDestacados__contenedor--cardImg",
-              claseDiv:"mainDestacados__contenedor--cardDescripcionBox",
-              claseDescrip:"mainDestacados__contenedor--cardDescripcion",
-              ClasePrecio:"mainDestacados__contenedor--cardPrecio"
+              claseCard:"mainFeatured__Container--Card",
+              claseImg:"mainFeatured__Container--cardImg",
+              claseDiv:"mainFeatured__Container--CardDescriptionBox",
+              claseDescrip:"mainFeatured__Container--CardDescription",
+              ClasePrecio:"mainFeatured__Container--CardPrice"
             };
           } else if (elemento.categoria == "Potencia") {
             console.log(elemento.categoria);
             //console.log("if potencia ejecutado")
-            productos = document.querySelector("[mainPotenciatpP]");
+            productos = document.querySelector("[mainPowertpP]");
             clase ={
-              claseCard:"mainPotenciatp__contenedor--card",
-              claseImg:"mainPotenciatp__contenedor--cardImg",
-              claseDiv:"mainDestacados__contenedor--cardDescripcionBox",
-              claseDescrip:"mainPotenciatp__contenedor--cardDescripcion",
-              ClasePrecio:"mainPotenciatp__contenedor--cardPrecio"
+              claseCard:"mainPowerP__Container--Card--card",
+              claseImg:"mainPowerP__Container--CardImg",
+              claseDiv:"mainFeatured__Container--CardDescriptionBox",
+              claseDescrip:"mainPowerP__Container--CardDescription",
+              ClasePrecio:"mainPowerP__Container--CardPrice"
             };
           } else {
             console.log("Categoría inexistente");

@@ -1,7 +1,7 @@
 import { productosServices } from "../servicesJS/services.js";
 
 function guardar(categoria, subcategoria, dir_imagen, titulo, descripcion, precio){
-    var data = JSON.stringify({        
+    let data = JSON.stringify({        
         categoria: categoria,
         subcategoria: subcategoria,
         dir_imagen: dir_imagen,

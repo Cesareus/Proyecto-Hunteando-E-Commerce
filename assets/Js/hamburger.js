@@ -6,8 +6,8 @@ window.addEventListener('load', (event) => {
 
     /* Cuando hago CLICK .button, .nav TOGGLE 'activo' */
 
-    var button = document.querySelector('#hamburgerButton');
-    var nav = document.querySelector('.header__MenuNav');
+    let button = document.querySelector('#hamburgerButton');
+    let nav = document.querySelector('.header__MenuNav');
 
     button.addEventListener('click', () => {
         console.log('activo');

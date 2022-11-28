@@ -1,71 +1,71 @@
 @import url(../variables.css);
-.bannerBox{
-    width: 100vw;        
-    height: auto;      
-}
-.imgBanner{
-    width: 100vw;       
-    height: auto;    
-}
-.mainProductos{
-    width: 90vw;
+.bannerBox{        
     height: auto;
-    margin: 10vh 0 0 5vw;    
+    width: 100vw;      
+}
+.imgBanner{       
+    height: auto;
+    width: 100vw;    
+}
+.mainProducts{
+    height: auto;
+    margin: 10vh 0 0 5vw;
+    width: 90vw;    
     /*background-color: greenyellow;*/   
 }
-.mainProductosBox{
+.mainProductsBox{
     width: 90vw;
     /* border: 1px solid red; */    
 }
-.mainPotenciatp{
+.mainPowertp{
     margin-top: 5rem;
 }
 
-.subProductosBox{    
-    width: 80vw;    
-    margin:0 auto;    
+.subProductsBox{    
+    display: flex;    
     /* padding:2px;        */
     height: auto;    
-    display: flex;    
-    justify-content:space-between;  
+    justify-content:space-between;    
+    margin:0 auto;    
+    width: 80vw;  
     /* background-color: violet; */
     /* border: 1px solid blue;   */
 }
 
-.subProductosBox__title{
+.subProductsBox__title{
     color: var(--fondo);
     font-family: 'Poppins';
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
     line-height: 38px;       
 }
-.bt__slider{
-    border: none;
-    background: transparent;    
+.bt__Slider{
+    background: transparent;
+    border: none;    
 }
-.btbox__slider{ 
-    position: relative;
-    width: 3rem;
-    height: 3rem;
+.btbox__Slider{
+    border: 1px solid #DEDBDB;
     border-radius: 50%;
-    border: 1px solid #DEDBDB;  
+    height: 3rem; 
+    position: relative;
+    width: 3rem;  
     /* background-color: aqua; */
 }
-.btnimg__slider {
-    position: absolute;
-    top: 18%;
-    right:38%;
-    width: 0.9rem;
+.btnimg__Slider {
+    color: #DEDBDB;
     height: auto;
-    color: #DEDBDB; 
+    position: absolute;
+    right:38%;
+    top: 18%;
+    width: 0.9rem; 
 } 
 
-.btbox__slider:hover {    
-    transform: scale(1.3); 
-    background-color: var(--color-primary);        
+.btbox__Slider:hover { 
+    background-color: var(--color-primary);    
+    transform: scale(1.3);        
 }
-/* .contenedor__productos{
+/* .contenedor__Products{
     margin: 0 3vw 3vw 3vw;
     background-color: var(--color_fondo_claro);
     display: flex;
@@ -73,30 +73,30 @@
     justify-content: space-between;
     align-items: center;
 } */
-.contenedor__productos{
+.container__Products{
+    align-items: center;
+    display:flex;
+    flex-wrap: nowrap;
+    gap: 1.7vw;
     /*background-color:fuchsia;*/
     height:24rem;
-    width:70vw;   
-    margin: 0 auto 1rem;
-    display:flex;
-    gap: 1.7vw;
-    padding: 0 2rem;
-    justify-content:flex-start;
-    align-items: center;
-    flex-wrap: nowrap;
-    overflow-x: auto;     
+    justify-content:flex-start;   
+    margin: 0 auto 1rem;     
     -webkit-overflow-scrolling:touch;
+    overflow-x: auto;
+    padding: 0 2rem;
+    width:70vw;
 }
-.contenedor__productos::-webkit-scrollbar{
-    height:5px;
-    width:2px;
+.container__Products::-webkit-scrollbar{
+    background: #e5e5e5;
     border:1px solid #d5d5d5;
-    background: #e5e5e5;    
+    height:5px;
+    width:2px;    
 }
-.contenedor__productos::-webkit-scrollbar-track{
+.container__Products::-webkit-scrollbar-track{
     -webkit-nox-shadow: inset 0 0 6px rgba(0,0,0,.3);
 }
-.contenedor__productos::-webkit-scrollbar-thumb{
+.container__Products::-webkit-scrollbar-thumb{
     background-color: var(--color-primary);
     outline:1px solid (#eee);
 } 
@@ -126,29 +126,29 @@
 } 
  */
 
- .card {
+ .card {	    
+    border: 1px solid #DEDBDB;
+	cursor: pointer;
     flex: 0 0 auto;
-    width: 16rem;
-    height: 21rem;
-    max-width: 16rem;       
+    height: 21rem;       
     max-height: 21rem;
-    text-align: center;
+    max-width: 16rem;
 	object-fit: cover;
-	cursor: pointer;	    
-    border: 1px solid #DEDBDB;    
+    text-align: center;
+    width: 16rem;    
     /*overflow: hidden;*/
  }
 
-.card:hover{
-    transform: scale(1.1);    
+.card:hover{    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
     transition: all 0.8s ease
 }
 
 .cardImg{
+    border-bottom: 0.3rem solid #000000;
     height: 14rem;    
-    padding-bottom: 1rem;
-    border-bottom: 0.3rem solid #000000;   
+    padding-bottom: 1rem;   
 }
 .cardDBox{    
     display: grid;
@@ -157,22 +157,22 @@
     row-gap: 0.5vw;
 }
 
-.cardDescripcion{
+.cardDescription{
     font-family: 'Poppins';
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 21px;
 }
 
-.cardPrecio{
+.cardPrice{
     font-family: 'Poppins';
+    font-size: 14px;
     font-style: bold;
     font-weight: 800;
-    font-size: 14px;
     line-height: 21px;
 }
 
-.mainBanner__inferior{   
+.mainBanner__bottom{   
     margin-top:5vh; 
 }
